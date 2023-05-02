@@ -4,39 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iphone-Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="wrapper" class="wrapper">
-        <div id="phone" class="phone">
-            <div class="input">
-                <input type="text" id="inputext" placeholder="0">
+<section>
+    <header>
+        <h1>My Phone-Book App</h1>
+    </header>
+    <form action="" type="" id="form">
+        <input type="text" class="input" placeholder="Search for a contact">
+        <button id="button" class="button"><i class="fa fa-refresh fa-spin"></i></button>
+        
+        <section id="main">
+            <div class="container" id="container">
+                <div class="input_file">
+                    <input type="file" id="file" class="file" single="single" accept="image/jpeg, image/png, image/jpg" required>
+                    <output></output>
+                </div>
+                <div>
+                    <input type="text" id="fullname" class="fullname" placeholder="Full Name" required>
+                </div>
+                <div>
+                    <input type="text" id="email" class="email" placeholder="Enter Your Email Address">
+                </div>
+                <div>
+                    <input type="text" id="orangeNumber" class="orangeNumber" placeholder="Enter Your Orange Number">
+                </div>
+                <div>
+                    <input type="text" id="lonestarNumber" class="lonestarNumber" placeholder="Enter Your Lonestar Number">
+                </div>
+    
+                   <button class="save" id="save">Save</button> 
+                   <button class="cancel" id="cancel">Cancel</button>
+                
             </div>
-            <div class="key_numbers">
-                <button class="first" onclick="clr()">AC</button>
-                <button class="second" onclick="del()"><--</button>
-                <button class="third" onclick="calculate('%')">%</button>
-                <button class="fourth" onclick="calculate('/')">/</button>
-                <button class="fifth" onclick="calculate(7)">7</button>
-                <button class="sixth" onclick="calculate(8)">8</button>
-                <button class="seventh" onclick="calculate(9)">9</button>
-                <button class="eighth" onclick="calculate('*')">X</button>
-                <button class="nineth" onclick="calculate(4)">4</button>
-                <button class="tenth" onclick="calculate(5)">5</button>
-                <button class="eleven" onclick="calculate(6)">6</button>
-                <button class="twelve" onclick="calculate('-')">-</button>
-                <button class="thirteen" onclick="calculate(1)">1</button>
-                <button class="fourteen" onclick="calculate(2)">2</button>
-                <button class="fifteen" onclick="calculate(3)">3</button>
-                <button class="sixteen" onclick="calculate('+')">+</button>
-                <button class="seventeen" onclick="calculate(0)">0</button>
-                <button class="eighteen" onclick="calculate('.')">.</button>
-                <button class="nineteen" onclick="Result('=')">=</button>
+            <div id="listContact">
+                <ol id="contacts">
+                    <li class="contacts">
+                        <span id="img"><img src="./image/360_F_222361406_FRccMrRh1v67wwzcGM8LyeALADwc5JwB.jpg"></span>
+                        <span id="inform">
+                            <span class="name">Blama Doe</span>
+                            <span class="address">blamadoe@gmail.com</span>
+                            <span class="orangeNumber">0770100000 /
+                                <span class="lonestarNumber">0880868788</span>
+                                <span class="edit"><i class="fa fa-pencil"></i></span>
+                                <span class="remove">&#10005;</span>
+                            </span>
+                        </span>
+                    </li>
+                    <hr>
+                    <!-- <li>
+                        <span id="img"><img src="./image/imgfive.jpg"></span>
+                        <span id="inform">
+                            <span class="name">Mary Doe</span>
+                            <span class="address">marydoe@gmail.com</span>
+                            <span class="orangeNumber">0770102323 /
+                                <span class="lonestarNumber">0881268788</span>
+                                <span class="edit"><i class="fa fa-pencil"></i></span>
+                                <span class="remove">&#10005;</span>
+                            </span>
+                        </span>
+                    </li> -->
+
+                </ol> 
             </div>
-            <button class="switch" onclick="wrapper()">Switch theme</button>
-            <script src="calculator.js"></script>
-        </div>
-    </div>
+            
+
+        </section>
+
+        
+
+    </form>
+
+</section>
+   
+    <script src="script.js">
+
+    </script>
 </body>
 </html>
